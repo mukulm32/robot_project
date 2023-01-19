@@ -1,114 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230119 11:15:13.175" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo11 Advance" source="C:\Users\40032341\robot_project\selenium_suite\demo11_advance.robot">
-<test id="s1-t1" name="TC4" line="37">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230119 11:15:13.702" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20230119 11:15:13.702" endtime="20230119 11:15:15.716"/>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230119 14:16:38.502" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo3" source="C:\Users\40032341\robot_project\robot_suite\demo3.robot">
+<test id="s1-t1" name="TC9" line="65">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${MY_DETAILS}[Mobile]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230119 14:16:38.537" endtime="20230119 14:16:38.537"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230119 11:15:15.717" endtime="20230119 11:15:15.918"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>15s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20230119 11:15:15.919" endtime="20230119 11:15:15.922"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>url=https://nasscom.in/</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230119 11:15:15.923" level="INFO">Opening url 'https://nasscom.in/'</msg>
-<status status="PASS" starttime="20230119 11:15:15.923" endtime="20230119 11:15:27.430"/>
-</kw>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${ele}</var>
-<arg>xpath=//a[text()='Members Listing']</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20230119 11:15:27.446" level="INFO">${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session="1011807503864838d9c8854c96f0d745", element="13772a9f-f40b-46c0-ab4e-f4121d3295e0")&gt;</msg>
-<status status="PASS" starttime="20230119 11:15:27.430" endtime="20230119 11:15:27.446"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>argument[0].click()</arg>
-<arg>ARGUMENTS</arg>
-<arg>${ele}</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230119 11:15:27.454" level="INFO">Executing JavaScript:
-argument[0].click()
-By using argument:
-'&lt;selenium.webdriver.remote.webelement.WebElement (session="1011807503864838d9c8854c96f0d745", element="13772a9f-f40b-46c0-ab4e-f4121d3295e0")&gt;'</msg>
-<msg timestamp="20230119 11:15:27.965" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-75.png"&gt;&lt;img src="selenium-screenshot-75.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230119 11:15:27.980" level="FAIL">JavascriptException: Message: javascript error: argument is not defined
-  (Session info: chrome=109.0.5414.75)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00E96643]
-	(No symbol) [0x00E2BE21]
-	(No symbol) [0x00D2DA9D]
-	(No symbol) [0x00D309E4]
-	(No symbol) [0x00D308AD]
-	(No symbol) [0x00D312E5]
-	(No symbol) [0x00D979F7]
-	(No symbol) [0x00D7FD7C]
-	(No symbol) [0x00D96B09]
-	(No symbol) [0x00D7FB76]
-	(No symbol) [0x00D549C1]
-	(No symbol) [0x00D55E5D]
-	GetHandleVerifier [0x0110A142+2497106]
-	GetHandleVerifier [0x011385D3+2686691]
-	GetHandleVerifier [0x0113BB9C+2700460]
-	GetHandleVerifier [0x00F43B10+635936]
-	(No symbol) [0x00E34A1F]
-	(No symbol) [0x00E3A418]
-	(No symbol) [0x00E3A505]
-	(No symbol) [0x00E4508B]
-	BaseThreadInitThunk [0x75D8FEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77957BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77957B8E+238]
-</msg>
-<status status="FAIL" starttime="20230119 11:15:27.446" endtime="20230119 11:15:27.987"/>
-</kw>
-<status status="FAIL" starttime="20230119 11:15:13.698" endtime="20230119 11:15:27.987">JavascriptException: Message: javascript error: argument is not defined
-  (Session info: chrome=109.0.5414.75)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x00E96643]
-	(No symbol) [0x00E2BE21]
-	(No symbol) [0x00D2DA9D]
-	(No symbol) [0x00D309E4]
-	(No symbol) [0x00D308AD]
-	(No symbol) [0x00D312E5]
-	(No symbol) [0x00D979F7]
-	(No symbol) [0x00D7FD7C]
-	(No symbol) [0x00D96B09]
-	(No symbol) [0x00D7FB76]
-	(No symbol) [0x00D549C1]
-	(No symbol) [0x00D55E5D]
-	GetHandleVerifier [0x0110A142+2497106]
-	GetHandleVerifier [0x011385D3+2686691]
-	GetHandleVerifier [0x0113BB9C+2700460]
-	GetHandleVerifier [0x00F43B10+635936]
-	(No symbol) [0x00E34A1F]
-	(No symbol) [0x00E3A418]
-	(No symbol) [0x00E3A505]
-	(No symbol) [0x00E4508B]
-	BaseThreadInitThunk [0x75D8FEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77957BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77957B8E+238]
-</status>
+<status status="PASS" starttime="20230119 14:16:38.537" endtime="20230119 14:16:38.537"/>
 </test>
-<status status="FAIL" starttime="20230119 11:15:13.179" endtime="20230119 11:15:27.987"/>
+<status status="PASS" starttime="20230119 14:16:38.505" endtime="20230119 14:16:38.537"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Demo11 Advance">Demo11 Advance</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo3">Demo3</stat>
 </suite>
 </statistics>
 <errors>
