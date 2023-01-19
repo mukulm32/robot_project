@@ -23,7 +23,7 @@ TC2
         #Scroll Element Into View    id=edit-field-company-profile-0-value
         Input Text    id=edit-field-company-profile-0-value    L&T
         Click Element    xpath=//span[@id='calculate-fee']
-        ${alert_text}  Handle Alert  action=ACCEPT  #timeout=20s   #handel alert can be increased by using timeoutargument
+        ${alert_text}  Handle Alert  action=ACCEPT  timeout=20s   #handel alert can be increased by using timeoutargument
         Should Be Equal    ${alert_text}    Please enter the total revenue greater than ZERO.
 
 
