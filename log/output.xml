@@ -1,15 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230119 14:16:38.502" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo3" source="C:\Users\40032341\robot_project\robot_suite\demo3.robot">
-<test id="s1-t1" name="TC9" line="65">
-<kw name="Log To Console" library="BuiltIn">
-<arg>${MY_DETAILS}[Mobile]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230119 14:16:38.537" endtime="20230119 14:16:38.537"/>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230119 15:12:12.394" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo4" source="C:\Users\40032341\robot_project\robot_suite\demo4.robot">
+<test id="s1-t1" name="TC5" line="29">
+<kw name="Set Variable" library="BuiltIn">
+<var>${num1}</var>
+<arg>$200,100</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230119 15:12:12.463" level="INFO">${num1} = $200,100</msg>
+<status status="PASS" starttime="20230119 15:12:12.462" endtime="20230119 15:12:12.466"/>
 </kw>
-<status status="PASS" starttime="20230119 14:16:38.537" endtime="20230119 14:16:38.537"/>
+<kw name="Set Variable" library="BuiltIn">
+<var>${num}</var>
+<arg>$200</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230119 15:12:12.467" level="INFO">${num} = $200</msg>
+<status status="PASS" starttime="20230119 15:12:12.466" endtime="20230119 15:12:12.467"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${nnum1}</var>
+<arg>${num1}</arg>
+<arg>$</arg>
+<arg>,</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20230119 15:12:12.468" level="INFO">${nnum1} = 200100</msg>
+<status status="PASS" starttime="20230119 15:12:12.467" endtime="20230119 15:12:12.469"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${nnum1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230119 15:12:12.469" endtime="20230119 15:12:12.470"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${nnum2}</var>
+<arg>${num}</arg>
+<arg>$</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20230119 15:12:12.471" level="INFO">${nnum2} = 200</msg>
+<status status="PASS" starttime="20230119 15:12:12.470" endtime="20230119 15:12:12.471"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${nnum2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230119 15:12:12.471" endtime="20230119 15:12:12.471"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${sum}</var>
+<arg>${nnum1}+${nnum2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230119 15:12:12.472" level="INFO">${sum} = 200300</msg>
+<status status="PASS" starttime="20230119 15:12:12.472" endtime="20230119 15:12:12.472"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${sum}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230119 15:12:12.473" endtime="20230119 15:12:12.473"/>
+</kw>
+<status status="PASS" starttime="20230119 15:12:12.461" endtime="20230119 15:12:12.473"/>
 </test>
-<status status="PASS" starttime="20230119 14:16:38.505" endtime="20230119 14:16:38.537"/>
+<status status="PASS" starttime="20230119 15:12:12.397" endtime="20230119 15:12:12.474"/>
 </suite>
 <statistics>
 <total>
@@ -18,7 +66,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo3">Demo3</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo4">Demo4</stat>
 </suite>
 </statistics>
 <errors>
