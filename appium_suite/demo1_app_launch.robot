@@ -42,6 +42,6 @@ TC2
      Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='There was an issue signing in']  20s
      Element Should Contain Text    xpath=//android.widget.TextView[@text='There was an issue signing in']    There was an issue signing in
 
-
+    Sleep    5s
     [Teardown]  Close Application
 
