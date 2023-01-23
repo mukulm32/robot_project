@@ -66,6 +66,31 @@ TC1 sign up
 
 
 
+TC2
+    Open Application    remote_url=http://localhost:4723/wd/hub   platformName=android   #browserName=chrome
+    ...  deviceName=Redmi
+    ...  appPackage=org.khanacademy.android  appActivity=org.khanacademy.android.ui.library.MainActivity
+    ...  noRest=True
+
+
+     Wait Until Page Contains Element    xpath=//*[@text='Dismiss']     30s
+     Click Element    xpath=//*[@text='Dismiss']
+
+     Wait Until Page Contains Element    xpath=//android.widget.Button[@text='Search']  30s
+     Click Element    xpath=//android.widget.Button[@text='Search']
+
+     Wait Until Page Contains Element    xpath=//android.widget.TextView[@text='Arts and humanities']  30s
+     Click Element    xpath=//android.widget.TextView[@text='Arts and humanities']
+
+
+    Click Element    xpath=//android.widget.TextView[@text='Art of Asia']
+
+
+
+
+
+
+
 
 
 
