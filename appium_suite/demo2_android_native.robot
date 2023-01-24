@@ -2,6 +2,7 @@
 Library  AppiumLibrary
 
 *** Test Cases ***
+#assignment launching the native app
 TC1 sign up
     [Documentation]  working with native app
     ...  for automation signup activity

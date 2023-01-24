@@ -2,6 +2,7 @@
 Library  AppiumLibrary
 
 *** Test Cases ***
+#assinment  launching app
 TC1
     Open Application    remote_url=http://localhost:4723/wd/hub   platformName=android   #browserName=chrome
     ...  deviceName=Redmi

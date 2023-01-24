@@ -2,6 +2,8 @@
 Library  AppiumLibrary
 
 *** Test Cases ***
+
+#assignment using uiselector
 TC1
 
 

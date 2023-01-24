@@ -32,3 +32,13 @@ TC5
     Input Text  input_username  mukul@gmail.com
     Input Password  input_password     12345678
     Click Element   input_go
+    
+TC6
+#trial try and error  creating list in
+
+    Open Browser  browser=chrome
+    @{output}  Run Keyword And Ignore Error    Click Element    xpath=//a
+    Log To Console    ${output}    
+    Log To Console    ${output}[0]
+    Log To Console    ${output}[1]
+    Log   ${output}
