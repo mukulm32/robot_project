@@ -2,7 +2,8 @@
 Library  SeleniumLibrary
 
 *** Test Cases ***
-TC1 Sales force registration
+#assignment creating gomeeting
+TC1 go meeting registration
     Open Browser    browser=chrome
     Maximize Browser Window
     Set Selenium Implicit Wait    30s

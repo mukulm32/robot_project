@@ -3,6 +3,7 @@ Library  OperatingSystem
 
 
 *** Test Cases ***
+#usig op system  and print it
 TC1
     Create Directory    path=c:\\mine\\demo12
 

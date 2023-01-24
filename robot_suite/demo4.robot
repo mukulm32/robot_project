@@ -3,7 +3,7 @@ Library  OperatingSystem
 Library    Collections
 Library    String
 
-*** Test Cases ***
+*** Test Cases ***   #creating list dic and editing it
 TC1
     ${list}  List Files In Directory    path=C:\\Users\\40032436\\AppData\\Local\\Temp
     Log To Console    ${list}

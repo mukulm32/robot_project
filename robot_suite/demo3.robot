@@ -1,6 +1,6 @@
 *** Settings ***
 Library    Collections
-*** Variables ***
+*** Variables ***  #creating list and dic
 ${BROWSER_NAME}  Chrome
 ${MOBILE_NUM}  988199***
 @{COLOUR}  red  yellow  blue

@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 
 *** Test Cases ***
+#assignment sign up with fb
 TC1 Register
     Open Browser    https://www.facebook.com    browser=chrome
     Maximize Browser Window

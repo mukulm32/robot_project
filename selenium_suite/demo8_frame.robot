@@ -2,6 +2,7 @@
 Library     SeleniumLibrary
 
 *** Test Cases ***
+#assignment
 TC1
     Open Browser    browser=chrome
     Maximize Browser Window

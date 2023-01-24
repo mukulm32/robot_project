@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 
 *** Test Cases ***
+# switch window operation
 TC1 Sales force registration
     Open Browser    browser=chrome
     Maximize Browser Window

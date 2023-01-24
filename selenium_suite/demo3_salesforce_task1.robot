@@ -2,6 +2,7 @@
 Library  SeleniumLibrary
 
 *** Test Cases ***
+#assignment reg in salesforce
 TC1 Sales force registration
     Open Browser    browser=chrome
     Maximize Browser Window

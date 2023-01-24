@@ -2,7 +2,8 @@
 Library  SeleniumLibrary
 
 *** Test Cases ***
-TC1 Sales force registration
+#assignment of citi bank
+TC1 citi bank registration
     Open Browser    browser=chrome
     Maximize Browser Window
     Set Selenium Implicit Wait    30s

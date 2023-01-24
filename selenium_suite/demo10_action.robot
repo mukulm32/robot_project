@@ -12,6 +12,7 @@ TC1
 
 
 TC2
+#assignment become member
         Open Browser    browser=chrome
         Maximize Browser Window
         Set Selenium Implicit Wait    15s

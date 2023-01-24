@@ -2,6 +2,7 @@
 Library     SeleniumLibrary
 
 *** Test Cases ***
+#usinf alert handel
 TC1
     Open Browser    browser=chrome
     Maximize Browser Window

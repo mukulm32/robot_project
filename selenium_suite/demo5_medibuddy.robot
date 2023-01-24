@@ -2,6 +2,8 @@
 Library  SeleniumLibrary
 
 *** Test Cases ***
+#assignment in med-buddy
+
 TC1 Sales force registration
     Open Browser    browser=edge
     Maximize Browser Window

@@ -14,6 +14,7 @@ TC2
     Title Should Be    Google
 
 TC3
+#assignment
     Open Browser  url=https://www.facebook.com/  browser=chrome
     Input Text    locator=id:email    text=hello@gmail.com
     Input Password    id=pass    123456
